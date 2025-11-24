@@ -5,3 +5,13 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
+    git config --global user.email "rehanur.pranta@stud.plus.ac.at"
+    git config --global user.name "Rehanur Rahman Pranta"
+    git add -A
+git commit -m "COMMIT MESSAGE"
+git push
